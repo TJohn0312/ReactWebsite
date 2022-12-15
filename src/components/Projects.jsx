@@ -25,7 +25,6 @@ flex-direction: column;
 `
 
 const Card = styled.div`
-cursor:pointer;
 background-color: #323232;
 overflow: hidden;
 height:300px;
@@ -33,6 +32,10 @@ width:600px;
 border-radius: 25px;
 margin: ${(props) => props.Right ? "0 0 0 auto" : "40px auto 40px 0"};
 display: flex;
+
+cursor: pointer;
+transition: all .8s;
+:hover{transform:scale(1.05)}
 `
 
 const Left = styled.div`

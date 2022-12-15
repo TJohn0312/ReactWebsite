@@ -62,6 +62,10 @@ const RightText = styled.p`
 display:flex;
 align-items: center;
 margin: 10px 0;
+
+cursor: pointer;
+transition: all .8s;
+:hover{transform:scale(1.05)}
 `
 
 const Hr = styled.hr`

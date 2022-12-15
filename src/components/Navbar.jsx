@@ -35,6 +35,10 @@ color:#fff;
 font-size:20px;
 align-items:center;
 padding: 10px};
+
+cursor: pointer;
+transition: all .8s;
+:hover{transform:scale(1.05)}
 `
 
 const Navbar = () => {
@@ -47,7 +51,6 @@ const Navbar = () => {
         <SongSelect></SongSelect>
       </MusicContainer>
       <RightContainer>
-        <Button>Home</Button>
         <Button>Projects</Button>
         <Button>Contact Me</Button>
       </RightContainer>
