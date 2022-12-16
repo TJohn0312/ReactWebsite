@@ -46,10 +46,16 @@ const Right = styled.div`
 height: 100%;
 width: 50%;
 color: white;/*for img alt*/
+overflow: hidden;
+text-align: center;
 `
 
 const Image = styled.img`
-
+height: 100%;
+display: block;
+position: relative;
+top: 0;
+/*right: 40%;*/
 `
 
 const Card = ({item}) => {
