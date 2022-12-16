@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
 height: 110vh;
+padding-top:10vh;
 background-image: linear-gradient(rgba(33, 33, 33, 0.0), #12dade), url("https://thumbs.dreamstime.com/z/fashion-man-handsome-serious-beauty-male-model-portrait-wear-leather-jacket-young-guy-over-black-background-fashion-man-handsome-191101373.jpg")
 `
 
