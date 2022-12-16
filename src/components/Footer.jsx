@@ -3,6 +3,8 @@ import styled from "styled-components";
 import {MailOutline, GitHub, PermPhoneMsg,} from "@mui/icons-material";
 
 const Container = styled.div`
+display: flex;
+flex-direction:column;
 background-color: #212121;
 color: white;
 `
@@ -61,7 +63,7 @@ margin: 0;
 const RightText = styled.p`
 display:flex;
 align-items: center;
-margin: 10px 0;
+margin: 10px 0px 0 0;
 
 cursor: pointer;
 transition: all .8s;
@@ -70,7 +72,7 @@ transition: all .8s;
 
 const Hr = styled.hr`
 border-color: black;
-margin: 10px;
+margin: 30px 10px 10px;
 `
 
 const Bottom = styled.div`

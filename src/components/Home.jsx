@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from "styled-components";
-import Navbar from "./Navbar.jsx"
+// import Navbar from "./Navbar.jsx"
 
 const Container = styled.div`
 height: 110vh;
 background-image: linear-gradient(rgba(33, 33, 33, 0.0), #12dade), url("https://thumbs.dreamstime.com/z/fashion-man-handsome-serious-beauty-male-model-portrait-wear-leather-jacket-young-guy-over-black-background-fashion-man-handsome-191101373.jpg")
 `
 
-const NNavbar = styled(Navbar)`
+const NNavbar = styled.div`
 `
 
 const Wrapper = styled.div`
-margin-top:15vh;
+padding-top:15vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -51,13 +51,10 @@ color: ${props => props.white ? "black" : "white"};
 const Home = () => {
   return (
     <Container>
-      <NNavbar />
       <Wrapper>
         <Title>Tyler Lee Johnson</Title>
         <Text>A Web-Developer</Text>
         <ButtonContainer>
-          <Button>Get Started</Button>
-          <Button white>Watch trailer</Button>
         </ButtonContainer>
       </Wrapper>
     </Container>
