@@ -8,11 +8,22 @@ height:300px;
 width:600px;
 border-radius: 25px;
 display: flex;
+position: relative;
 margin: ${(props) => props.align === "right" ? "0 0 0 auto" : "40px auto 40px 0"};
 
 cursor: pointer;
 transition: all .8s;
 :hover{transform:scale(1.05)}
+`
+
+const ESpan = styled.span`
+/*make the div a clickable link*/
+position:absolute; 
+width:100%;
+height:100%;
+top:0;
+left: 0;
+z-index: 1;
 `
 
 const Left = styled.div`
@@ -60,7 +71,8 @@ top: 0;
 
 const Card = ({item}) => {
   return (
-  <Container align={item.align}>
+    <Container align={item.align}>
+      <a href={item.link}><ESpan></ESpan></a>
       <Left>
         <Text>{item.text}</Text>
       </Left>
@@ -68,32 +80,6 @@ const Card = ({item}) => {
         <Image src={item.img} alt={item.alt}/>
       </Right>
     </Container>
-    // <Container>
-    //   <Card>
-    //     <Left>
-    //       <CardText>An E-commerse react based website styled around leatherworking connected by stripe</CardText>
-    //     </Left>
-    //     <Right>
-    //       <CardImg />
-    //     </Right>
-    //   </Card> 
-    //   <Card Right>
-    //     <Left>
-    //       <CardText>A collection of basic projects rolled into one place</CardText>
-    //     </Left>
-    //     <Right>
-    //       <CardImg />
-    //     </Right>
-    //   </Card> 
-    //   <Card>
-    //     <Left>
-    //       <CardText>This site</CardText>
-    //     </Left>
-    //     <Right>
-    //       <CardImg />
-    //     </Right>
-    //   </Card> 
-    // </Container>
   )
 }
 

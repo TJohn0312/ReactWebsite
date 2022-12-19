@@ -60,10 +60,12 @@ const RightTextContainer = styled.div`
 margin: 0;
 `
 
-const RightText = styled.p`
+const RightText = styled.a`
+color: white;
 display:flex;
 align-items: center;
 margin: 10px 0px 0 0;
+text-decoration: none;
 
 cursor: pointer;
 transition: all .8s;
@@ -89,7 +91,7 @@ const Copyright = styled.div`
 const date = new Date().getFullYear();
 const Footer = () => {
   return (
-    <Container>
+    <Container id="Footer">
       <Top>
         <Left>
           <LeftTitle>TYLER</LeftTitle>
@@ -103,9 +105,9 @@ const Footer = () => {
         <Right>
           <RightTitle>Contact Me:</RightTitle>
           <RightTextContainer>
-            <RightText><MailOutline />Email: tyleej0312@gmail.com</RightText>
-            <RightText><PermPhoneMsg/>Phone: 984 414 7780</RightText>
-            <RightText><GitHub/>GitHub: TJohn0312</RightText>
+            <RightText href="mailto:tyleej0312@gmail.com" target="_blank" rel="noopener noreferrer"><MailOutline />Email: tyleej0312@gmail.com</RightText>
+            <RightText href="sms:9844147780"><PermPhoneMsg/>Phone: 984 414 7780</RightText>
+            <RightText href="https://github.com/TJohn0312/" target="_blank" rel="noopener noreferrer"><GitHub/>GitHub: TJohn0312</RightText>
           </RightTextContainer>
         </Right>
       </Top>

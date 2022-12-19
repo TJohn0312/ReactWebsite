@@ -27,7 +27,7 @@ flex-direction: column;
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="Projects">
         <Text>Heres some of my previous work!</Text>
         <CardContainer>
           {cardItems.map((item) => (<Card item={item} key={item.id}/>))}

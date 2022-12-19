@@ -56,7 +56,7 @@ const RightContainer = styled.div`
 margin-right: 70px;
 `
 
-const Button = styled.button`
+const Button = styled.a`
 margin-right: 20px;
 background-color: transparent;
 border: none;
@@ -64,6 +64,7 @@ color:#fff;
 font-size:20px;
 align-items:center;
 padding: 10px};
+text-decoration: none;
 
 cursor: pointer;
 transition: all .8s;
@@ -81,9 +82,9 @@ const Navbar = () => {
         <SongSelect><SkipNextIcon /></SongSelect>
       </MusicContainer>
       <RightContainer>
-        <Button>Home</Button>
-        <Button>Projects</Button>
-        <Button>Contact Me</Button>
+        <Button href="#Home">Home</Button>
+        <Button href="#Projects">Projects</Button>
+        <Button href="#Footer">Contact Me</Button>
       </RightContainer>
     </Container>
   )

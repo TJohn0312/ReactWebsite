@@ -51,7 +51,7 @@ color: ${props => props.white ? "black" : "white"};
 
 const Home = () => {
   return (
-    <Container>
+    <Container id="Home">
       <Wrapper>
         <Title>Tyler Lee Johnson</Title>
         <Text>A Web-Developer</Text>
